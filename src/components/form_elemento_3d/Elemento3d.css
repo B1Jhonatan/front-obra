@@ -1,0 +1,36 @@
+.boxElemento {
+  background-color: gray;
+  width: 25vw;
+  border-radius: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.boxElemento h2 {
+  text-align: center;
+}
+
+.elemento-guardar {
+}
+
+.ele-save {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ele-save label {
+  font-size: 12px;
+}
+
+.botonese {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botonese button {
+  width: 180px;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid #000;
+  cursor: pointer;
+}

@@ -1,0 +1,51 @@
+.formulario3d {
+  width: 25vw;
+  background-color: gray;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.iform {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.iselect {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.iselect select {
+  width: 180px;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 10px;
+}
+
+input {
+  width: 165px;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 15px;
+  border: 2px solid #000;
+}
+
+.ibotones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ibotones button {
+  width: 180px;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid #000;
+  cursor: pointer;
+}
