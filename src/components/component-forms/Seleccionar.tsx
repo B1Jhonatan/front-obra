@@ -1,51 +1,41 @@
 import React, { useState, useEffect } from "react";
 
-interface Elementos {
+interface Lista {
   id: number;
-  nameElemento: string;
+  name: string;
 }
 
-interface MaterialPSI {
-  id: number;
-  namePsi: string;
+interface Direccion {
+  direccion: string;
 }
 
-const Seleccionar: React.FC = () => {
-  const [elementos, setElementos] = useState<Elementos[]>([]);
-  const [materialPsi, setMaterialPsi] = useState<MaterialPSI[]>([]);
+const Seleccionar: React.FC<Direccion> = ({ direccion }: Direccion) => {
+  const [lista, setLista] = useState<Lista[]>([]);
+  const [links, setLinks] = useState<string>("");
 
   useEffect(() => {
-    fetch("http://localhost:8080/elementos/mortero-psi")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log("Materiales recibidos:", data);
-        setMaterialPsi(data);
-      })
-      .catch((error) => console.error("Error al cargar PSI:", error));
-  }, []);
+    if (direccion === "elementos") {
+      setLinks("http://localhost:8080/elementos/todos-elementos");
+    } else if (direccion === "psi") {
+      setLinks("http://localhost:8080/elementos/concreto-psi");
+    }
+  }, [direccion]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/elementos/todos-elementos")
+    if (!links) return; // Solo ejecuta cuando links tenga valor
+    fetch(links)
       .then((res) => res.json())
-      .then((data) => setElementos(data))
-      .catch((error) => console.error("Error al cargar elementos:", error));
-  }, []);
+      .then((data) => setLista(data))
+      .catch((error) => console.error("Error al cargar: ", error));
+  }, [links]); // Este efecto se ejecuta cada vez que 'links' cambie
 
   return (
     <div className="iselect">
       <select>
-        <option value="elemento">Elemento</option>
-        {elementos.map((ele) => (
-          <option value={ele.id} key={ele.id}>
-            {ele.nameElemento}
-          </option>
-        ))}
-      </select>
-      <select>
-        <option value="elemento">Selecciona PSI</option>
-        {materialPsi.map((mat) => (
-          <option value={mat.id} key={mat.id}>
-            {mat.namePsi}
+        <option value="elemento">--seleccionar--</option>
+        {lista.map((list) => (
+          <option value={list.id} key={list.id}>
+            {list.name}
           </option>
         ))}
       </select>
