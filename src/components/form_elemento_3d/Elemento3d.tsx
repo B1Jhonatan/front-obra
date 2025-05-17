@@ -1,5 +1,5 @@
 import "./Elemento3d.css";
-import Botones from "./Botones";
+import Botones from "../component-forms/BotonesComponent";
 
 function Elemento3D() {
   return (

@@ -1,3 +1,5 @@
+import "./BotonesComponent.css";
+
 interface ParamBoton {
   nameText: string;
 }

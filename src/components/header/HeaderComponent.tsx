@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./header.css";
+import "./HeaderComponent.css";
 
 function Header() {
   const [titulo, setTitulo] = useState("");
@@ -7,7 +7,7 @@ function Header() {
     setTitulo(document.title);
   });
   return (
-    <header className="header">
+    <header className="iheader">
       <div className="tituloH">
         <h1>{titulo}</h1>
       </div>

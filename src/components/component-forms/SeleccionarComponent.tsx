@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./SeleccionarComponent.css";
 
 interface Lista {
   id: number;
@@ -12,6 +13,8 @@ interface Direccion {
 const Seleccionar: React.FC<Direccion> = ({ direccion }: Direccion) => {
   const [lista, setLista] = useState<Lista[]>([]);
   const [links, setLinks] = useState<string>("");
+  const nombreSelect: string =
+    direccion.charAt(0).toLocaleUpperCase() + direccion.slice(1);
 
   useEffect(() => {
     if (direccion === "elementos") {
@@ -31,6 +34,7 @@ const Seleccionar: React.FC<Direccion> = ({ direccion }: Direccion) => {
 
   return (
     <div className="iselect">
+      <label htmlFor="">{nombreSelect}:</label>
       <select>
         <option value="elemento">--seleccionar--</option>
         {lista.map((list) => (

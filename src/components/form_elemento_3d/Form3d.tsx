@@ -1,19 +1,28 @@
-import Seleccionar from "../component-forms/Seleccionar";
+import Seleccionar from "../component-forms/SeleccionarComponent";
 import Titulo from "../component-forms/Titulo";
-import Botones from "./Botones";
+import Botones from "../component-forms/BotonesComponent";
+import Inputs from "../component-forms/InputsComponent";
 import "./Form3d.css";
-import Inputs from "./Inputs";
+import CheckComponent from "../component-forms/CheckComponent";
+import ChecksComponent from "../component-forms/ChecksComponent";
 
 function Form3d() {
   return (
     <div className="formulario3d">
       <Titulo />
       <form action="post">
-        <Seleccionar direccion="elementos" />
-        <Seleccionar direccion="psi" />
-        <div className="">
-          <Inputs texto="Nombre del elemento:" />
-          <Inputs texto="Cantidad:" />
+        <div className="iseleccion">
+          <Seleccionar direccion="elementos" />
+          <div className="icheckear">
+            <ChecksComponent />
+          </div>
+        </div>
+        <Inputs texto="Nombre del elemento:" />
+        <div className="iflex">
+          <div className="icantidad">
+            <Inputs texto="Cantidad:" />
+          </div>
+          <Seleccionar direccion="psi" />
         </div>
         <Inputs texto="Largo:" />
         <Inputs texto="Ancho:" />

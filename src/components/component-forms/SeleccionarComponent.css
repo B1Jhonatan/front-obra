@@ -1,0 +1,6 @@
+.iselect select {
+  width: 180px;
+  height: 35px;
+  border-radius: 15px;
+  padding-left: 10px;
+}

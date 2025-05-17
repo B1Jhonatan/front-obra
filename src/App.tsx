@@ -1,13 +1,18 @@
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Elemento3D from "./components/form_elemento_3d/Elemento3d";
-import Form3d from "./components/form_elemento_3d/Form3d";
+import HomePage from "./pages/HomePage";
+import Calcular2dPage from "./pages/Calcular2dPage";
+import HistorialPage from "./pages/HistorialPage";
+import Calcular3dPage from "./pages/Calcular3dPage";
 
 function App() {
   return (
-    <div className="formC">
-      <Form3d />
-      <Elemento3D />
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/calcular-3d" element={<Calcular3dPage />} />
+      <Route path="/calcular-2d" element={<Calcular2dPage />} />
+      <Route path="/historial" element={<HistorialPage />} />
+    </Routes>
   );
 }
 

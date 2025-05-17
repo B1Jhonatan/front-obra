@@ -1,0 +1,7 @@
+.iform {
+  display: flex;
+  width: 80vw;
+  margin-top: 5vh;
+  float: right;
+  justify-content: space-evenly;
+}

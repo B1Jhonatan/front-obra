@@ -1,51 +1,23 @@
 .formulario3d {
   width: 25vw;
   background-color: gray;
+  box-shadow: 0px 0px 20px gray;
   padding: 20px;
   border-radius: 20px;
 }
 
-.iform {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.iform input {
-  width: 24vw;
-}
-
-.iselect {
+.iseleccion {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
-.iselect select {
-  width: 180px;
-  height: 30px;
-  border-radius: 15px;
-  padding-left: 10px;
-}
-
-input {
-  width: 165px;
-  height: 30px;
-  padding-left: 10px;
-  border-radius: 15px;
-  border: 2px solid #000;
-}
-
-.ibotones {
+.iflex {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.ibotones button {
-  width: 180px;
-  height: 30px;
-  border-radius: 15px;
-  border: 2px solid #000;
-  cursor: pointer;
+.icantidad input {
+  width: 160px;
 }
