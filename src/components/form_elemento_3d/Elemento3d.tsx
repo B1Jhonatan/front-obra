@@ -1,11 +1,13 @@
 import "./Elemento3d.css";
 import Botones from "../component-forms/BotonesComponent";
+import ImprimirComponent from "../component-forms/ImprimirComponent";
 
 function Elemento3D() {
   return (
     <div className="boxElemento">
       <h2>Elemento</h2>
       <div className="elemento-guardar">
+        <ImprimirComponent nombre="Elemento:" />
         <div className="ele-save">
           <label htmlFor="">Elemento: </label>
           <label htmlFor="" id="elementoe"></label>

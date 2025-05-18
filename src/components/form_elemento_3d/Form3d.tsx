@@ -3,7 +3,6 @@ import Titulo from "../component-forms/Titulo";
 import Botones from "../component-forms/BotonesComponent";
 import Inputs from "../component-forms/InputsComponent";
 import "./Form3d.css";
-import CheckComponent from "../component-forms/CheckComponent";
 import ChecksComponent from "../component-forms/ChecksComponent";
 
 function Form3d() {
