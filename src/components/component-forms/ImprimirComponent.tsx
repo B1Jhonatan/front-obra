@@ -8,13 +8,23 @@ function ImprimirComponent({ nombre }: ParamImprimir) {
   const [idLabel, setIdLabel] = useState("");
   useEffect(() => setNombreLabel(nombre));
   useEffect(() => {
-    const id = `check-${nombreLabel.toLowerCase().replace(/\s+/g, "-")}`;
+    function toCamelCase(text: string): string {
+      const words = text.toLowerCase().split(" ");
+      return words
+        .map((word, index) =>
+          index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
+        )
+        .join("");
+    }
+    const id: string = toCamelCase(nombreLabel);
     setIdLabel(id);
   });
   return (
-    <div>
-      <label htmlFor="">{nombreLabel}</label>
-      <label htmlFor="" id={idLabel}></label>
+    <div className="tex-alinear">
+      <label htmlFor="">{nombreLabel}:</label>
+      <label htmlFor="" id={idLabel}>
+        {idLabel}
+      </label>
     </div>
   );
 }

@@ -7,7 +7,7 @@ interface texto {
 function Inputs({ texto }: texto) {
   return (
     <div className="iinput">
-      <label htmlFor="">{texto}</label>
+      <label htmlFor="">{texto}:</label>
       <input className="itext" type="text" placeholder="Numero mayor a cero" />
     </div>
   );

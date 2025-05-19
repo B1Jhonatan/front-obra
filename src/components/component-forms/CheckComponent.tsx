@@ -5,12 +5,13 @@ interface NombreCheck {
 }
 
 function CheckComponent({ nombre, checked, onChange }: NombreCheck) {
-  const id = `check-${nombre.toLowerCase().replace(/\s+/g, "-")}`;
+  const id = `${nombre.toLowerCase().replace(/\s+/g, "-")}`;
 
   return (
-    <div className="ialinear">
+    <div className="alinear-cuadro">
       <label htmlFor={id}>{nombre}</label>
       <input
+        className="cuadro"
         id={id}
         type="checkbox"
         value={nombre}

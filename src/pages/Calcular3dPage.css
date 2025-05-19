@@ -5,3 +5,12 @@
   float: right;
   justify-content: space-evenly;
 }
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botones .boton {
+  width: 180px;
+}

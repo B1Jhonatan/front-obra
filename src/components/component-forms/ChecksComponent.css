@@ -1,4 +1,14 @@
 .ichecks {
   display: flex;
   width: 180px;
+  justify-content: space-between;
+}
+
+.alinear-cuadro {
+  display: inline-block;
+  text-align: center;
+}
+
+.cuadro {
+  margin-top: 10px;
 }
