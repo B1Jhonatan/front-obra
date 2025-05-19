@@ -1,6 +1,6 @@
-import "./Elemento3d.css";
-import Botones from "../component-forms/BotonesComponent";
 import ImprimirComponent from "../component-forms/ImprimirComponent";
+import BotonesComponent from "../component-forms/BotonesComponent";
+import "./Elemento3d.css";
 
 function Elemento3D() {
   return (
@@ -73,9 +73,9 @@ function Elemento3D() {
           <label htmlFor="" id="agua-total"></label>
         </div>
       </div>
-      <div className="botonese">
-        <Botones nameText="Modficar" />
-        <Botones nameText="Guardar" />
+      <div>
+        <BotonesComponent nameText="Modficar" />
+        <BotonesComponent nameText="Guardar" />
       </div>
     </div>
   );

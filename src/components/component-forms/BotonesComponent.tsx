@@ -4,12 +4,12 @@ interface ParamBoton {
   nameText: string;
 }
 
-function Botones({ nameText }: ParamBoton) {
+function BotonesComponent({ nameText }: ParamBoton) {
   return (
-    <div className="botonese">
-      <button>{nameText}</button>
+    <div>
+      <button className="boton">{nameText}</button>
     </div>
   );
 }
 
-export default Botones;
+export default BotonesComponent;

@@ -1,6 +1,6 @@
 import Seleccionar from "../component-forms/SeleccionarComponent";
 import Titulo from "../component-forms/Titulo";
-import Botones from "../component-forms/BotonesComponent";
+import BotonesComponent from "../component-forms/BotonesComponent";
 import Inputs from "../component-forms/InputsComponent";
 import "./Form3d.css";
 import ChecksComponent from "../component-forms/ChecksComponent";
@@ -26,9 +26,9 @@ function Form3d() {
         <Inputs texto="Largo:" />
         <Inputs texto="Ancho:" />
         <Inputs texto="Alto:" />
-        <div className="ibotones">
-          <Botones nameText="Calcular" />
-          <Botones nameText="Historial" />
+        <div>
+          <BotonesComponent nameText="Calcular" />
+          <BotonesComponent nameText="Historial" />
         </div>
       </form>
     </div>
