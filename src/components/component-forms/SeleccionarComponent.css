@@ -1,6 +1,9 @@
+.iselect {
+  display: block;
+}
 .iselect select {
-  width: 180px;
-  height: 35px;
   border-radius: 15px;
   padding-left: 10px;
+  border: 0px;
+  background-color: rgb(225, 225, 255);
 }

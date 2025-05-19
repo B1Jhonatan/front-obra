@@ -23,7 +23,7 @@ function ImprimirComponent({ nombre }: ParamImprimir) {
     <div className="tex-alinear">
       <label htmlFor="">{nombreLabel}:</label>
       <label htmlFor="" id={idLabel}>
-        {idLabel}
+        --
       </label>
     </div>
   );
