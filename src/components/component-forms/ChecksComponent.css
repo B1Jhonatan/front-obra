@@ -1,6 +1,6 @@
 .ichecks {
   display: flex;
-  width: 180px;
+  width: 12vw;
   justify-content: space-between;
 }
 
@@ -10,5 +10,5 @@
 }
 
 .cuadro {
-  margin-top: 10px;
+  margin-top: 1rem;
 }

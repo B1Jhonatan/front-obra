@@ -22,6 +22,6 @@
 }
 
 .menu p:hover {
-  background-color: rgb(250 250 250 / 25%); /* 50% transparent */
+  background-color: rgba(200, 200, 255); /* 50% transparent */
   cursor: pointer;
 }
