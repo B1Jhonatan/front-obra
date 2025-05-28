@@ -2,23 +2,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80vw;
+  width: 80%;
   float: right;
   height: 10vh;
 }
-
 .tituloH {
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .menu {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  padding-right: 10px;
 }
 
 .menu p {
-  margin-inline: 5px;
   padding: 10px;
 }
 
