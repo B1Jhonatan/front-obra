@@ -1,6 +1,6 @@
 function HistorialPage() {
   return (
-    <div>
+    <div className="iform">
       <h1>Historial</h1>
     </div>
   );

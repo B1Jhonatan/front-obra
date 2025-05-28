@@ -1,5 +1,6 @@
 .iform {
-  display: flex;
+  display: grid;
+  align-items: center;
   width: 80vw;
   margin-top: 5vh;
   float: right;
