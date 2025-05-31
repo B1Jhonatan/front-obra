@@ -1,5 +1,4 @@
 import Seleccionar from "../component-forms/SeleccionarComponent";
-import Titulo from "../component-forms/Titulo";
 import BotonesComponent from "../component-forms/BotonesComponent";
 import InputsComponent from "../component-forms/InputsComponent";
 import "./Form3d.css";
@@ -9,9 +8,6 @@ function Form3d() {
   return (
     <div className="formulario3d">
       <form action="post">
-        <div className="titulo">
-          <Titulo />
-        </div>
         <div className="iseleccion">
           <Seleccionar direccion="elementos" />
           <div className="icheckear">

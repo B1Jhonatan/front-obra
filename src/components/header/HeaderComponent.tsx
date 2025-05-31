@@ -1,15 +1,11 @@
-import { useEffect, useState } from "react";
+import Titulo from "../component-forms/Titulo";
 import "./HeaderComponent.css";
 
 function Header() {
-  const [titulo, setTitulo] = useState("");
-  useEffect(() => {
-    setTitulo(document.title);
-  });
   return (
     <header className="iheader">
       <div className="tituloH">
-        <h1>{titulo}</h1>
+        <Titulo />
       </div>
       <div className="menu">
         <p>Inicio</p>

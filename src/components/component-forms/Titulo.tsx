@@ -1,12 +1,20 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import ChangeNameTitle from "../../utilidades/ChangeNameTitle";
 
 function Titulo() {
-  const [titulo, setTitulo] = useState(document.title);
+  const title: string = ChangeNameTitle();
+  const [titulo, setTitulo] = useState("");
 
   useEffect(() => {
-    // Si el título cambia en otro lugar, puedes actualizarlo aquí
-    setTitulo(document.title);
-  }, []);
+    if (title === "") {
+      setTitulo("Cantidades de obra");
+    } else {
+      setTitulo(title);
+    }
+  }, [title]);
+  useEffect(() => {
+    document.title = titulo;
+  });
 
   return (
     <div>

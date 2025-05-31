@@ -7,12 +7,10 @@ import Calcular3dPage from "./pages/Calcular3dPage";
 import HeaderComponent from "./components/header/HeaderComponent";
 import FooterComponent from "./components/footer/FooterComponent";
 import MenuLateral from "./components/menu/MenuLateral";
-import Title from "./components/titulo/Title";
 
 function App() {
   return (
     <div className="g-app">
-      <Title titulo="Calculadora de obra" />
       <HeaderComponent />
       <Routes>
         <Route path="/" element={<HomePage />} />
