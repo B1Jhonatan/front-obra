@@ -1,8 +1,7 @@
 .iform {
   display: grid;
-  align-items: center;
-  width: 80vw;
-  margin-top: 5vh;
+  place-content: center;
+  width: 80%;
+  height: 90vh;
   float: right;
-  justify-content: space-evenly;
 }

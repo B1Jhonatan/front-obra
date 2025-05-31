@@ -4,7 +4,7 @@ import "./Elemento3d.css";
 
 function Elemento3D() {
   return (
-    <div className="boxElemento">
+    <dialog className="boxElemento">
       <h1>Elemento</h1>
       <div className="elemento-guardar">
         <ImprimirComponent nombre="Elemento" />
@@ -28,7 +28,7 @@ function Elemento3D() {
         <BotonesComponent nameText="MODIFICAR" />
         <BotonesComponent nameText="GUARDAR" />
       </div>
-    </div>
+    </dialog>
   );
 }
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Titulo from "../component-forms/Titulo";
 import "./HeaderComponent.css";
 
@@ -8,10 +9,10 @@ function Header() {
         <Titulo />
       </div>
       <div className="menu">
-        <p>Inicio</p>
-        <p>Contacto</p>
-        <p>Sobre nosotros</p>
-        <p>Iniciar sesion</p>
+        <Link to="/">Inicio</Link>
+        <Link to="/sobre-mi">Sobre mi</Link>
+        <Link to="/contacto">Contacto</Link>
+        <Link to="/Inicia-sesion">Iniciar sesion</Link>
       </div>
     </header>
   );

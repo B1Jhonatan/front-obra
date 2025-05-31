@@ -16,11 +16,13 @@
   padding-right: 10px;
 }
 
-.menu p {
-  padding: 10px;
+.menu a {
+  padding: 15px;
+  text-decoration: none;
+  color: inherit;
 }
 
-.menu p:hover {
+.menu a:hover {
   background-color: rgba(200, 200, 255); /* 50% transparent */
   cursor: pointer;
 }

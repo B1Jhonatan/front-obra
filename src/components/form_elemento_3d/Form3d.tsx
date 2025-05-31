@@ -3,6 +3,7 @@ import BotonesComponent from "../component-forms/BotonesComponent";
 import InputsComponent from "../component-forms/InputsComponent";
 import "./Form3d.css";
 import ChecksComponent from "../component-forms/ChecksComponent";
+import Elemento3d from "../form_elemento_3d/Elemento3d";
 
 function Form3d() {
   return (
@@ -29,6 +30,7 @@ function Form3d() {
           <BotonesComponent nameText="HISTORIAL" />
         </div>
       </form>
+      <Elemento3d />
     </div>
   );
 }
