@@ -1,9 +1,7 @@
-import MenuLateral from "../components/menu/MenuLateral";
-
 function HomePage() {
   return (
-    <div>
-      <MenuLateral />
+    <div className="iform">
+      <h1>Home</h1>
     </div>
   );
 }

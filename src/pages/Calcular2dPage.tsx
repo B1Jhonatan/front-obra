@@ -1,4 +1,4 @@
-import Form2d from "../components/form_elemento_2d/Form2d";
+import Form2d from "../components/forms/form_elemento_2d/Form2d";
 
 function Calcular2dPage() {
   return (

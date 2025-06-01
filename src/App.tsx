@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
 import HomePage from "./pages/HomePage";
 import Calcular2dPage from "./pages/Calcular2dPage";
 import HistorialPage from "./pages/HistorialPage";
@@ -7,6 +6,9 @@ import Calcular3dPage from "./pages/Calcular3dPage";
 import HeaderComponent from "./components/header/HeaderComponent";
 import FooterComponent from "./components/footer/FooterComponent";
 import MenuLateral from "./components/menu/MenuLateral";
+import "./App.css";
+import "./components/forms/form_css/Form.css";
+import "./components/forms/form_css/Elemento.css";
 
 function App() {
   return (

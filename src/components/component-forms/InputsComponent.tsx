@@ -1,14 +1,20 @@
 import "./InputsComponent.css";
 
-interface texto {
-  texto: string;
+interface props {
+  label: string;
+  value: string;
 }
 
-function Inputs({ texto }: texto) {
+function Inputs({ label, value }: props) {
   return (
     <div className="iinput">
-      <label htmlFor="">{texto}:</label>
-      <input className="itext" type="text" placeholder="Numero mayor a cero" />
+      <label htmlFor="">{label}:</label>
+      <input
+        className="itext"
+        type="text"
+        value={value}
+        placeholder="Numero mayor a cero"
+      />
     </div>
   );
 }

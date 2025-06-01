@@ -1,6 +1,5 @@
-import ImprimirComponent from "../component-forms/ImprimirComponent";
-import BotonesComponent from "../component-forms/BotonesComponent";
-import "./Elemento3d.css";
+import ImprimirComponent from "../../component-forms/ImprimirComponent";
+import BotonesComponent from "../../component-forms/BotonesComponent";
 
 function Elemento3D() {
   return (

@@ -1,7 +1,7 @@
-import BotonesComponent from "../component-forms/BotonesComponent";
-import ChecksComponent from "../component-forms/ChecksComponent";
-import InputsComponent from "../component-forms/InputsComponent";
-import Seleccionar from "../component-forms/SeleccionarComponent";
+import BotonesComponent from "../../component-forms/BotonesComponent";
+import ChecksComponent from "../../component-forms/ChecksComponent";
+import InputsComponent from "../../component-forms/InputsComponent";
+import Seleccionar from "../../component-forms/SeleccionarComponent";
 import Elemento3d from "../form_elemento_3d/Elemento3d";
 
 function Form2d() {
@@ -15,15 +15,15 @@ function Form2d() {
               <ChecksComponent />
             </div>
           </div>
-          <InputsComponent texto="Nombre del elemento" />
+          <InputsComponent label="Nombre del elemento" value="ne" />
           <div className="iflex">
             <div className="icantidad">
-              <InputsComponent texto="Cantidad" />
+              <InputsComponent label="Cantidad" value="cantidad" />
             </div>
             <Seleccionar direccion="psi" />
           </div>
-          <InputsComponent texto="Largo" />
-          <InputsComponent texto="Ancho" />
+          <InputsComponent label="Largo" value="largo" />
+          <InputsComponent label="Ancho" value="ancho" />
           <div className="botones">
             <BotonesComponent nameText="CALCULAR" />
             <BotonesComponent nameText="HISTORIAL" />

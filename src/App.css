@@ -1,3 +1,11 @@
 .g-app {
   width: 100%;
 }
+
+.iform {
+  display: grid;
+  place-content: center;
+  width: 80%;
+  height: 90vh;
+  float: right;
+}

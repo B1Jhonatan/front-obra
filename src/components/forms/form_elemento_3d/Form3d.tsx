@@ -1,9 +1,8 @@
-import Seleccionar from "../component-forms/SeleccionarComponent";
-import BotonesComponent from "../component-forms/BotonesComponent";
-import InputsComponent from "../component-forms/InputsComponent";
-import "./Form3d.css";
-import ChecksComponent from "../component-forms/ChecksComponent";
-import Elemento3d from "../form_elemento_3d/Elemento3d";
+import Seleccionar from "../../component-forms/SeleccionarComponent";
+import BotonesComponent from "../../component-forms/BotonesComponent";
+import InputsComponent from "../../component-forms/InputsComponent";
+import ChecksComponent from "../../component-forms/ChecksComponent";
+import Elemento3d from "./Elemento3d";
 
 function Form3d() {
   return (
@@ -15,16 +14,16 @@ function Form3d() {
             <ChecksComponent />
           </div>
         </div>
-        <InputsComponent texto="Nombre del elemento" />
+        <InputsComponent label="Nombre del elemento" value="ne" />
         <div className="iflex">
           <div className="icantidad">
-            <InputsComponent texto="Cantidad" />
+            <InputsComponent label="Cantidad" value="cantidad" />
           </div>
           <Seleccionar direccion="psi" />
         </div>
-        <InputsComponent texto="Largo" />
-        <InputsComponent texto="Ancho" />
-        <InputsComponent texto="Alto" />
+        <InputsComponent label="Largo" value="largo" />
+        <InputsComponent label="Ancho" value="ancho" />
+        <InputsComponent label="Alto" value="alto" />
         <div className="botones">
           <BotonesComponent nameText="CALCULAR" />
           <BotonesComponent nameText="HISTORIAL" />
